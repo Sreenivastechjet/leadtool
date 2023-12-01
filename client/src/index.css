@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+
+  font-family: "DM Sans", sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bgwhite {
+  background-color: #ffffff !important;
+}
+
+.bggray {
+  background-color: #c1c1c1 !important;
+}
+
+.bgblue {
+  background: #3d5a80;
+}
+
+.main {
+  margin-left: 256px;
+  background: #f2f2f2;
+  background: #c1c1c1;
+}
+
+.form-control {
+  border-radius: 20px !important;
+  padding: 10px !important;
+  color: gray !important;
+  font-weight: 600 !important;
+  padding-left: 20px !important;
+}
+.css-13cymwt-control,
+.css-t3ipsp-control,
+.reactselect {
+  border-radius: 20px !important;
+  padding: 4px !important;
+}
+.css-t3ipsp-control:hover {
+  border-radius: 20px !important;
+  padding: 4px !important;
+}
+
+.h3text {
+  font-size: 16px;
+  color: black;
+  font-weight: 600 !important;
+}
+
+.h4text {
+  font-size: 14px !important;
+  color: black !important;
+  font-weight: 600 !important;
+}
+.table,
+thead {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #3a4960;
+}
+
+thead,
+tbody,
+tr {
+  width: 100% !important;
+}
+th {
+  background: #e6f7ff !important;
+  color: #3d5a80 !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.btn.active {
+  background: #ffffff !important; /* Change to your preferred active tab color */
+  color: Blue !important; /* Change to your preferred text color for the active tab */
+}
+
+.scrollable-row {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.scrollable-row > div {
+  flex: 0 0 auto;
+  width: 350px; /* Set a fixed width for each column or adjust as needed */
+}
+
+.css-8t49rw-MuiStepConnector-line {
+  display: block;
+  border-color: #bdbdbd;
+  border-left-style: solid;
+  border-left-width: 3px !important;
+  min-height: 26px !important;
+  margin-left: 10px !important;
+}
+
+.pdf-document {
+  height: 40vh !important ;
+}
+.active1 {
+  background: #f1bc90 !important;
+}
+
+.loadingIcon {
+  font-size: 30px !important;
+}
+
+.loadersCss {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: transparent !important;
+}
+.date-label {
+  margin: 0 0 10px -70px;
+  padding: 5px;
+  width: 200px !important;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+  background: #ffff;
+}
+
+.hr-custom {
+  border: 1px solid gray;
+  width: 100%;
+  margin-top: 18px;
+  margin-left: -120px;
+  position: absolute;
+  z-index: 0;
+}
+.search {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+.search:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+}

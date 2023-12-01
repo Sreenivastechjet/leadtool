@@ -1,0 +1,18 @@
+
+
+.css-13cymwt-control, .css-t3ipsp-control, .reactselect{
+    border-radius: 10px !important;
+    padding: 0px !important;
+  }
+  .css-t3ipsp-control:hover{
+    border-radius: 10px !important;
+    padding: 0px !important;
+  }
+
+
+  .btnbg{
+    background: rgb(247, 231, 231) !important;
+  }
+  .btn2bg{
+    background: rgb(241, 229, 246) !important;
+  }
