@@ -1,7 +1,9 @@
 const route = require('express').Router()
+const chartController = require('../controller/chartController');
 
-route.get("/allusers/:id", getAllUsers);
-route.post("/addmsg", addMessage);
-route.post("/getmsg", getMessages);
+
+route.post("/allusers/:id", chartController.getAllUsers);
+route.post("/addmsg", chartController.addMessage);
+route.post("/getmsg", chartController.getMessages);
 
 module.exports = route

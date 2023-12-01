@@ -3,6 +3,7 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
 const path = require("path");
+const socket = require("socket.io");
 
 const corsOptions = {
   origin: true,
@@ -22,6 +23,7 @@ const leadRoute = require("./route/leadRoute");
 const dealRoute = require("./route/dealRoute");
 const meetingRoute = require("./route/meetingRoute");
 const taskRoute = require("./route/taskRoute");
+const chatRoute = require("./route/chartRoute");
 
 app.use(cookieParser(process.env.REF_TOKEN_SECRET));
 app.use(express.urlencoded({ extended: true }));
@@ -33,6 +35,7 @@ app.use(`/api/v1/lead`, leadRoute);
 app.use(`/api/v1/deal`, dealRoute);
 app.use(`/api/v1/event`, meetingRoute);
 app.use(`/api/v1/task`, taskRoute);
+app.use(`/api/v1/chat`, chatRoute);
 
 
 // app.use('/public/Images', express.static(path.join(__dirname, 'public/Images')));
@@ -55,3 +58,25 @@ const start = async () => {
 };
 
 start();
+
+// const io = socket(server, {
+//   cors: {
+//     origin: "*",
+//     credentials: true,
+//   },
+// });
+
+// global.onlineUsers = new Map();
+// io.on("connection", (socket) => {
+//   global.chatSocket = socket;
+//   socket.on("add-user", (userId) => {
+//     onlineUsers.set(userId, socket.id);
+//   });
+
+//   socket.on("send-msg", (data) => {
+//     const sendUserSocket = onlineUsers.get(data.to);
+//     if (sendUserSocket) {
+//       socket.to(sendUserSocket).emit("msg-recieve", data.msg);
+//     }
+//   });
+// });

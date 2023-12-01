@@ -1,19 +1,19 @@
 const mongoose = require("mongoose");
 
-const Chart = new mongoose.Schema(
+const Chat = new mongoose.Schema(
   {
-    messgae: {
-      typeof: String,
-      require: true,
+    message: {
+      type: String,
+      required: true,
     },
     users: Array,
     sender: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      ref: "users",
       required: true,
     },
   },
-  { collection: "charts", timestamps: true }
+  { collection: "chat", timestamps: true }
 );
 
-module.exports = mongoose.model("Chart", Chart);
+module.exports = mongoose.model("Chat", Chat);
